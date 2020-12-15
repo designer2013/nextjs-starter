@@ -5,10 +5,10 @@ import Counter from './counter'
 import Clock from './clock'
 
 function Page({ linkTo, NavigateTo, title }) {
-  const placeholderData = useSelector((state) => state.placeholderData)
-  const error = useSelector((state) => state.error)
-  const light = useSelector((state) => state.light)
-  const lastUpdate = useSelector((state) => state.lastUpdate)
+  const placeholderData = useSelector((state) => state.clock.placeholderData)
+  const error = useSelector((state) => state.clock.error)
+  const light = useSelector((state) => state.clock.light)
+  const lastUpdate = useSelector((state) => state.clock.lastUpdate)
   return (
     <div>
       <h1>{title}</h1>

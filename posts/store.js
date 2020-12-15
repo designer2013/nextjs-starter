@@ -19,7 +19,7 @@ import createSagaMiddleware from 'redux-saga'
 import { createWrapper } from 'next-redux-wrapper'
 
 import rootReducer from 'posts/reducers/rootReducer'
-import rootSaga from 'posts/sagas/saga'
+import rootSaga from 'posts/sagas/rootSaga'
 
 const bindMiddleware = (middleware) => {
   if (process.env.NODE_ENV !== 'production') {
